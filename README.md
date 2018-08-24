@@ -37,3 +37,18 @@ Plot the results with
 $ ./plot.sh
 ```
 (should open a browser tab with a box plot)
+
+
+To run the benchmark with the current master of Ammonite (commit `53edc31`),
+do
+```
+$ ./run.sh ammonite-current
+```
+Instead of simply pasting the code that `run.sh` puts in the clipboard,
+paste it in a text editor, then feed it 10~20 lines at a time to Ammonite.
+Apart from the very first and very last lines, it mostly consists of the
+same block of code, repeated multiple times, so it should be easy to simply
+paste that code multiple times in a row.
+Just pay attention to paste at the same time entire blocks whose duration
+matters (the `val start = …` line and its subsequent `val end = …` line should
+be pasted at the same time).
