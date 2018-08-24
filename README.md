@@ -13,6 +13,8 @@ $ rm -rf out # just in case
 $ mill '__[2.12.6].publishLocal'
 ```
 
+(If you are using mill 0.2.4, you may need to change `Some(mapDependencies)` in `build.sc` to `Some(mapDependencies())`.)
+
 Clone this repository with
 ```
 $ cd ..
